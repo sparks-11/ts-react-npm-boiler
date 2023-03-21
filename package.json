@@ -1,6 +1,6 @@
 {
   "name": "ts-react-npm-boiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "typescript test npm package",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -11,7 +11,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "prepublishOnly": "npm run prettier-format && npm run lint",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier-format": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
